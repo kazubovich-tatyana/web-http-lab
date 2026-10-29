@@ -74,4 +74,8 @@
 
 c9967bc | 21.10.2026 | **feat: release Notes API v0.1**  main.py реализация endpoints get(/notes/{note_id}), head(/notes/{note_id}), patch(/notes/{note_id}), delete(/notes/{note_id})
 
-хэш ком | 27.10.2026 | **feat: persist notes in postgres** подключение базы данных, создание models.py - с чистыми sql запросами, вынесение логики подлючения к бд в repasitory.py, pydantic schemas вынесены в schemas.py, реализованы endpoints для работы с пользователями
+d4a256d | 27.10.2026 | **feat: persist notes in postgres** подключение базы данных, создание models.py - с чистыми sql запросами, вынесение логики подлючения к бд в repasitory.py, pydantic schemas вынесены в schemas.py, реализованы endpoints для работы с пользователями
+
+e7e0e90 | 29.10.2026 | **chore: add Dockerfile, .dockerignore**
+
+хэш     | 29.10.2026 | **chore: upgraded docker-compose** добавлена сборка приложения, проверка запуска базы данных
