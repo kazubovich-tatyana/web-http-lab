@@ -1,4 +1,3 @@
-import psycopg
 from psycopg.rows import dict_row
 from psycopg_pool import ConnectionPool
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -25,7 +24,7 @@ def init_db():
             cur.execute(models.CREATE_NOTES_TABLE)
             cur.execute(models.CREATE_NOTES_INDEX)
             cur.execute(models.CREATE_USER_NOTES_INDEX)
-            conn.commit()
+        conn.commit()
 
 def get_db():
     with pool.connection() as conn:

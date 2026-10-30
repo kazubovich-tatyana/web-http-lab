@@ -1,0 +1,10 @@
+services:
+  test_db:
+    image: postgres:16
+    container_name: tests_web_lab
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_DB: test_db
+    ports:
+      - "5432:5432"

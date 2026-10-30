@@ -7,3 +7,6 @@ __pycache__
 .git
 .gitignore
 .env
+tests/
+conftest.py
+docker-compose.test.yml
